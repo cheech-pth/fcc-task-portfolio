@@ -1,0 +1,82 @@
+body {
+  background: rgb(27, 27, 27);
+  color: white;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+nav {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background: rgb(15, 15, 15);
+  height: 50px;
+  width: 100%;
+  box-shadow: 5px 0 2px rgb(17, 17, 17);
+  padding: 5px;
+}
+
+nav > a {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+#welcome-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome-section > h1 {
+  font-size: 4rem;
+}
+
+#welcome-section > a {
+  font-size: 1.4rem;
+  border: 1px solid white;
+  padding: 15px;
+}
+
+#projects {
+  display: flex;
+  gap: 50px;
+  align-content: center;
+  justify-content: center;
+  padding: 25px;
+  background-color: rgb(14, 14, 14);
+}
+
+.project-tile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
+  margin: 10px;
+  background: red;
+  height: 320px;
+  width: 310px;
+  font-size: 1.5rem;
+}
+
+.project-tile > a {
+  background: rgba(0, 0, 0, 0.671);
+  border: 1px solid white;
+  height: fit-content;
+  padding: 15px;
+}
+
+@media (max-width: 600px) {
+  #projects {
+    display: flex;
+    flex-direction: column;
+  }
+}
